@@ -5,7 +5,7 @@ async function main()
     if(req.ok)
     {
         const data = await req.json()
-        console.log(data)
+        console.log(data.docs[0].author_name)
     }
 }
 
